@@ -17,13 +17,12 @@ theme:
     article_nav_bottom: true
 
 nav:
-    - Home: index.md
-    - Customization: customization.md
+    - AWS: aws.md
+    - K8S: kubernetes.md
     - CICD:
-        - Automation: sample-a.md
-        - Quality:
-            - Sonarqube: sample-a1.md
-            - Fortify: sample-a2.md
+        - Jenkins: jenkins.md
+        - Sonarqube: sample-a1.md
+        - Fortify: sample-a2.md
         - Feedback: sample-b.md
 
 markdown_extensions:
