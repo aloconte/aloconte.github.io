@@ -1,0 +1,34 @@
+site_name: "Ado's Doco"
+site_description: "Ado's documentation"
+site_author: 'Ado Loconte'
+
+repo_url: https://github.com/aloconte/aloconte.github.io
+
+theme:
+    name: null
+    custom_dir: mkdocs_dark
+    # default from mkdocs_theme.yml
+    static_templates:
+        - 404.html
+    include_search_page: true
+    search_index_only: true
+    history_buttons: true
+    article_nav_top: true
+    article_nav_bottom: true
+
+nav:
+    - Home: index.md
+    - Customization: customization.md
+    - CICD:
+        - Automation: sample-a.md
+        - Quality:
+            - Sonarqube: sample-a1.md
+            - Fortify: sample-a2.md
+        - Feedback: sample-b.md
+
+markdown_extensions:
+    - toc:
+        permalink: '#'
+
+#extra:
+#    version: 0.0.1
