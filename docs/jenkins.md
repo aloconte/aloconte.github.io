@@ -4,7 +4,7 @@ For details about standard mkdocs options, see [MkDocs Configuration](http://www
 
 ## Extra configuration options
 
-In addition, the Windmill Dark theme supports a few additional options, which may be
+In addition, the  Dark theme supports a few additional options, which may be
 listed under the `extra:` key of `mkdocs.yml`.
 
 `extra.logo`: Path to a logo to include in the top bar next to the site name.
