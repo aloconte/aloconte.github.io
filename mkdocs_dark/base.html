@@ -153,7 +153,12 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
   {%- if config.copyright %}<p>{{ config.copyright }}</p>{%- endif %}
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/aloconte/aloconte.github.io">aloconte.github.io</a></p>
-{%- endblock %}
+  <p>
+    {% if page and page.meta.git_revision_date_localized %}
+    <small><br><i>Updated {{ page.meta.git_revision_date_localized }}</i></small>
+    {% endif %}
+  </p>
+  {%- endblock %}
 </footer>
 
 </body>

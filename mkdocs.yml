@@ -26,8 +26,14 @@ nav:
         - Feedback: sample-b.md
 
 markdown_extensions:
+    - attr_list
+    - md_in_html
     - toc:
         permalink: '#'
+
+plugins:
+    - search # necessary for search to work
+    - git-revision-date-localized
 
 #extra:
 #    version: 0.0.1
