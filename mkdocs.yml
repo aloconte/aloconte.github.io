@@ -4,6 +4,7 @@ site_url: https://aloconte.github.io
 repo_url: https://github.com/aloconte/aloconte.github.io
 theme:
   name: material
+  custom_dir: theme
   features:
     - navigation.instant
     - navigation.top

@@ -1,7 +1,7 @@
 # Ado's Doco
 
 <figure markdown>
-  ![Mushrooms](_resources/_6293918.jpg){ width="300",align=left,loading=lazy }
+  ![Mushrooms](img/_6293918.jpg){ width="300",align=left,loading=lazy }
   <figcaption>Mushrooms</figcaption>
 </figure>
 

@@ -1,6 +1,6 @@
 # Ado's Doco
 
-![Mushrooms](_resources/_6293918.jpg){ align=left,loading=lazy }
+![Mushrooms](img/_6293918.jpg){ align=left,loading=lazy }
 
 ## About
 
