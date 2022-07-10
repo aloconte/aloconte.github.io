@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    
+    <title>Nothing to See Here</title>
+    
+    <link>https://aloconte.github.io</link>
+    <atom:link href="https://aloconte.github.io/weekly.xml" rel="self" type="application/rss+xml"/>
+
+    
+    
+
+    
+    <pubDate>2022-07-10 12:18:54.854937</pubDate>
+    <ttl>10080</ttl>
+
+    
+    <generator>mkdocs-newsletter - v1.0.1</generator>
+
+    
+    
+    <image><url>None</url><title>Nothing to See Here</title>
+      <link>https://aloconte.github.io</link>
+    </image>
+    
+
+    
+    
+  </channel>
+</rss>
