@@ -1,31 +1,65 @@
-VERSION=`python setup.py --version`
+.DEFAULT_GOAL := docs
 
-default:
-	@echo "Specify one of: serve, publish_docs, publish_package, clean-pyc, clean-build"
+.PHONY: install
+install:
+	pdm install
 
-clean-pyc:
-	find . -name '*.pyc' -exec rm --force {} +
-	find . -name '*.pyo' -exec rm --force {} +
-	find . -name '*~' -exec rm --force  {} +
+.PHONY: update
+update:
+	@echo "-------------------------"
+	@echo "- Updating dependencies -"
+	@echo "-------------------------"
 
-clean-build:
-	rm --force --recursive build/
-	rm --force --recursive dist/
-	rm --force --recursive *.egg-info
+	pdm update --no-sync
+	pdm sync --clean
 
-serve:
-	/usr/bin/env mkdocs serve -s -a 0.0.0.0:8000
+	@echo ""
 
-publish_docs:
-	/usr/bin/env mkdocs gh-deploy
+.PHONY: clean
+clean:
+	@echo "---------------------------"
+	@echo "- Cleaning unwanted files -"
+	@echo "---------------------------"
 
-publish_package:
-	@echo Build python distribution
-	python setup.py sdist bdist_wheel
-	@echo "Publish to PyPI at https://pypi.python.org/pypi/mkdocs-dark"
-	@echo "Version in setup.py is $(VERSION)"
-	@echo "Git tag is `git describe --tags`"
-	@echo "Run this manually: /usr/bin/env twine upload dist/mkdocs-dark-$(VERSION).tar.gz dist/mkdocs_dark-$(VERSION)-py3-none-any.whl"
+	rm -rf `find . -name __pycache__`
+	rm -f `find . -type f -name '*.py[co]' `
+	rm -f `find . -type f -name '*.rej' `
+	rm -rf `find . -type d -name '*.egg-info' `
+	rm -f `find . -type f -name '*~' `
+	rm -f `find . -type f -name '.*~' `
+	rm -rf .cache
+	rm -rf .pytest_cache
+	rm -rf .mypy_cache
+	rm -rf htmlcov
+	rm -f .coverage
+	rm -f .coverage.*
+	rm -rf build
+	rm -rf dist
+	rm -f src/*.c pydantic/*.so
+	rm -rf site
+	rm -rf docs/_build
+	rm -rf docs/.changelog.md docs/.version.md docs/.tmp_schema_mappings.html
+	rm -rf codecov.sh
+	rm -rf coverage.xml
 
+	@echo ""
 
-.PHONY: clean-pyc clean-build serve publish_docs publish_package
+.PHONY: docs
+docs:
+	@echo "-------------------------"
+	@echo "- Serving documentation -"
+	@echo "-------------------------"
+
+	pdm run mkdocs serve
+
+	@echo ""
+
+.PHONY: build-docs
+build-docs:
+	@echo "--------------------------"
+	@echo "- Building documentation -"
+	@echo "--------------------------"
+
+	pdm run mkdocs build
+
+	@echo ""

@@ -19,7 +19,7 @@
 
 ## Sub-Heading B 3
 
-```php
+```zephir
 require_once 'Zend/Uri/Http.php';
 
 namespace Location\Web;

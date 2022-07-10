@@ -1,6 +1,4 @@
-# Ado's Doco
-
-## About
+# About
 
 TODO
 

@@ -1,39 +1,94 @@
-site_name: "Ado's Doco"
-site_description: "Ado's documentation"
-site_author: 'Ado Loconte'
-
-repo_url: https://github.com/aloconte/aloconte.github.io
-
+site_name: Time Garden
 theme:
-    name: null
-    custom_dir: mkdocs_dark
-    # default from mkdocs_theme.yml
-    static_templates:
-        - 404.html
-    include_search_page: true
-    search_index_only: true
-    history_buttons: true
-    article_nav_top: true
-    article_nav_bottom: true
+  name: material
+  features:
+    - navigation.instant
+    - navigation.top
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+  palette:
+    # Light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
 
-nav:
-    - AWS: aws.md
-    - K8S: kubernetes.md
-    - CICD:
-        - Jenkins: jenkins.md
-        - Sonarqube: sample-a1.md
-        - Fortify: sample-a2.md
-        - Feedback: sample-b.md
+    # Dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/links.css
 
 markdown_extensions:
-    - attr_list
-    - md_in_html
-    - toc:
-        permalink: '#'
+  - abbr
+  - admonition
+  - meta
+  - def_list
+  - toc:
+      permalink: ⚑
+      baselevel: 2
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: '!!python/name:pymdownx.emoji.to_svg'
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
 
 plugins:
-    - search # necessary for search to work
-    - git-revision-date-localized
+  - search
+  - exclude-search:
+      exclude:
+        - newsletter/*
+  - autolinks
+#  - git-revision-date-localized:
+#      type: timeago
+  - minify:
+      minify_html: true
+  - section-index
+#  - mkdocs-newsletter
 
-#extra:
-#    version: 0.0.1
+nav:
+  - index.md
+  - AWS: aws.md
+  - K8S: kubernetes.md
+  - CICD:
+      - sample-a.md
+      - Jenkins: jenkins.md
+      - Sonarqube: sample-a1.md
+      - Fortify: sample-a2.md
+      - Feedback: sample-b.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/aloconte
+    - icon: fontawesome/solid/rss
+      link: https://aloconte.github.io/time-garden/newsletter/0_newsletter_index
+
+repo_name: aloconte/aloconte.github.io
+repo_url: https://github.com/aloconte/aloconte.github.io
