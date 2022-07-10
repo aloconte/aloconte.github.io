@@ -1,4 +1,7 @@
 site_name: Nothing to See Here
+repo_name: aloconte/aloconte.github.io
+site_url: https://aloconte.github.io
+repo_url: https://github.com/aloconte/aloconte.github.io
 theme:
   name: material
   features:
@@ -91,6 +94,3 @@ extra:
       link: https://github.com/aloconte
     - icon: fontawesome/solid/rss
       link: https://aloconte.github.io/newsletter/0_newsletter_index
-
-repo_name: aloconte/aloconte.github.io
-repo_url: https://github.com/aloconte/aloconte.github.io

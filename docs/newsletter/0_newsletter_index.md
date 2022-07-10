@@ -7,10 +7,10 @@ If you want to follow the meaningful changes of this site, you can either:
 
 You can choose how often you want to see the site updates:
 
-* [Daily](https://aloconte.github.io/time-garden/daily.xml)
-* [Weekly](https://aloconte.github.io/time-garden/weekly.xml)
-* [Monthly](https://aloconte.github.io/time-garden/monthly.xml)
-* [Yearly](https://aloconte.github.io/time-garden/yearly.xml)
+* [Daily](https://aloconte.github.io/daily.xml)
+* [Weekly](https://aloconte.github.io/weekly.xml)
+* [Monthly](https://aloconte.github.io/monthly.xml)
+* [Yearly](https://aloconte.github.io/yearly.xml)
 
 # Newsletter section
 
