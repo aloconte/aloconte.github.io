@@ -1,4 +1,4 @@
-site_name: Time Garden
+site_name: Nothing to See Here
 theme:
   name: material
   features:
@@ -32,9 +32,11 @@ extra_css:
 
 markdown_extensions:
   - abbr
+  - attr_list
   - admonition
   - meta
   - def_list
+  - md_in_html
   - toc:
       permalink: ⚑
       baselevel: 2
@@ -65,12 +67,12 @@ plugins:
       exclude:
         - newsletter/*
   - autolinks
-#  - git-revision-date-localized:
-#      type: timeago
+  - git-revision-date-localized:
+      type: timeago
   - minify:
       minify_html: true
   - section-index
-#  - mkdocs-newsletter
+  - mkdocs-newsletter
 
 nav:
   - index.md
@@ -88,7 +90,7 @@ extra:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/aloconte
     - icon: fontawesome/solid/rss
-      link: https://aloconte.github.io/time-garden/newsletter/0_newsletter_index
+      link: https://aloconte.github.io/newsletter/0_newsletter_index
 
 repo_name: aloconte/aloconte.github.io
 repo_url: https://github.com/aloconte/aloconte.github.io
