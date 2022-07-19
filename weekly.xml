@@ -11,7 +11,7 @@
     
 
     
-    <pubDate>2022-07-18 06:39:17+00:00</pubDate>
+    <pubDate>2022-07-18 06:39:18+00:00</pubDate>
     <ttl>10080</ttl>
 
     
@@ -30,7 +30,7 @@
       
       <description>&lt;article class=&#34;md-content__inner md-typeset&#34;&gt; &lt;a class=&#34;md-content__button md-icon&#34; href=&#34;https://github.com/aloconte/aloconte.github.io/edit/master/docs/newsletter/2022_w28.md&#34; title=&#34;Edit this page&#34;&gt; &lt;svg viewbox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;path d=&#34;M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z&#34;&gt;&lt;/path&gt;&lt;/svg&gt; &lt;/a&gt;  &lt;h2 id=&#34;software-development&#34;&gt;Software Development&lt;/h2&gt; &lt;h3 id=&#34;ide&#34;&gt;IDE&lt;/h3&gt; &lt;h4 id=&#34;intellij-idea&#34;&gt;&lt;a href=&#34;software-development/intellij-idea.md&#34;&gt;Intellij IDEA&lt;/a&gt;&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;New: Add global git config to ingore Intellij IDEA generated files.&lt;/li&gt; &lt;/ul&gt; &lt;h2 id=&#34;other&#34;&gt;Other&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;Correction: Move files into sub folders and refactor nav.&lt;/li&gt; &lt;/ul&gt; &lt;hr/&gt;  &lt;/article&gt;</description>
       <link>https://aloconte.github.io/newsletter/2022_w28/</link>
-      <pubDate>2022-07-18 06:39:17+00:00</pubDate>
+      <pubDate>2022-07-18 06:39:18+00:00</pubDate>
       <source url="https://aloconte.github.io/weekly.xml">Nothing to See Here</source>
       <guid isPermaLink="true">https://aloconte.github.io/newsletter/2022_w28/</guid>
       
